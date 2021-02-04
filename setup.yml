@@ -30,12 +30,6 @@
       name: nginx
       state: restarted
 
-  - name: Node.js app | Install Node.js
-    apt:
-      name: nodejs
-      state: latest
-      update_cache: yes
-
   - name: Node.js app | Install npm
     apt:
       name: npm
@@ -64,4 +58,4 @@
     ignore_errors: yes
 
   - name: Node.js app | Start application with PM2
-    shell: pm2 start /home/okami/chat/app.js -f
+    shell: pm2 start /home/ubuntu/chat/app.js -f
