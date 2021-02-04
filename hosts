@@ -1,0 +1,5 @@
+---
+  app:
+    hosts: 
+      local
+    connection: local
